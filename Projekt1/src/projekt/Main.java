@@ -133,7 +133,7 @@ public class Main {
         System.out.print(Arrays.toString(l.szesnastkowy(scanner.nextInt())));
         System.out.println("");
 
-        System.out.println(l.palindrom(scanner.next()));
+        System.out.println(l.palindrom(scanner.next( )));
 
 
     }
