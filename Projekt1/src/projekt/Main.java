@@ -169,6 +169,10 @@ public class Main {
         b.factor(scanner.nextInt());
         b.series();
         b.liczbaPi(100000);
+        b.perfect(28);
+        b.moneta();
+        b.wypiszComb();
+        b.reverse("asfadsa");
 
     }
 }

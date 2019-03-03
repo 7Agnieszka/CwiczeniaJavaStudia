@@ -1,5 +1,9 @@
 package projekt;
 
+import com.sun.org.apache.xpath.internal.SourceTree;
+import java.util.Random;
+import java.util.Arrays;
+
 public class Book {
 
 /*podzielne przez 5 i 6, od 100 do 1000 po 10 w linii, oddzielone jednym miejscem*/
@@ -49,6 +53,8 @@ public class Book {
 
     }
 
+
+
     /*1/3+3/5+...+97/99*/
 
     public void series(){
@@ -70,6 +76,54 @@ public class Book {
 
         }
         System.out.println(4.*wynik);
+
+    }
+
+    public void perfect(int k){
+       int sum=0;
+        for (int i=1; i< k; i++)
+        {
+            if(k%i==0)sum=sum+i;
+        }
+
+        if(sum==k) System.out.println("perfect");
+        else System.out.println("no perfect");
+    }
+    private Random rr = new Random();
+
+    public void moneta() {
+        int head=0, tail=0, l =0;
+
+        for (int i=1; i<=1000000; i++) {
+            l = rr.nextInt(2);
+            if(l==0) head++;
+            else tail++;
+        }
+        System.out.println("heads: "+ head + ", tails: "+ tail );
+    }
+
+
+    public void wypiszComb(){
+        int amount=0;
+        for(int i=1; i<=7;i++)
+            for(int j=1; j<i;j++)
+            {
+                System.out.printf("%-2d %-2d \n",i,j); amount++;
+
+            }
+        System.out.println(amount);
+    }
+
+
+
+    public void reverse(String p)
+    { String r = p;
+
+        for (int i=0; i < p.length(); i++) {
+            r.replace(r.charAt(i),p.charAt(p.length() - 1 - i));
+            System.out.print(p.charAt(p.length() - 1 - i));
+        }
+
 
     }
 

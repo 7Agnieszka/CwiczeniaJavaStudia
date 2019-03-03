@@ -347,7 +347,7 @@ public class Tools {
 
 
     public void moneta(int m) {
-        int l = rr.nextInt(1);
+        int l = rr.nextInt(2);
         if (l == 1 && l == m)
             System.out.printf("wylosowany orzel, zgadles");
 
