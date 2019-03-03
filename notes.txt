@@ -71,3 +71,59 @@ return Math.sqrt( (x1-y1)*(x1-y1)+(x2-y2)*(x2-y2));
 }
 
 
+4 8 14 17
+
+(Random month) Write a program that randomly generates an integer between 1 
+and 12 and displays the English month name January, February, …, December for 
+the number 1, 2, …, 12, accordingly.
+
+switch (month)
+{ case 0:"January"; break;
+case 0:"February"; break;
+case 0:"March"; break;
+case 0:"April"; break;
+case 0:"May"; break;
+case 0:"June"; break;
+case 0:"July"; break;
+case 0:"August"; break;
+case 0:"September"; break;
+case 0:"October"; break;
+case 0:"November"; break;
+case 0:"December"; break;
+default: "other";
+}
+
+
+
+
+(Sort three integers) Write a program that prompts the user to enter three integers 
+and display the integers in non-decreasing order
+
+public int najwieksza(int a, int b, int c)
+{
+if(a>b)
+{if(a>c) return a;
+else if(c>b) return c;
+else return b;
+}
+
+
+
+Game: heads or tails) Write a program that lets the user guess whether the flip of 
+a coin results in heads or tails. The program randomly generates an integer 0 or 1,
+which represents head or tail. The program prompts the user to enter a guess and 
+reports whether the guess is correct or incorrect.
+
+
+(Game: scissor, rock, paper) Write a program that plays the popular scissor-rock-
+paper game. (A scissor can cut a paper, a rock can knock a scissor, and a paper can 
+wrap a rock.) The program randomly generates a number 0, 1, or 2 representing 
+scissor, rock, and paper. The program prompts the user to enter a number 0, 1, or 
+2 and displays a message indicating whether the user or the computer wins, loses, 
+or draws. Here are sample runs:
+scissor (0), rock (1), paper (2): 1
+The computer is scissor. You are rock. You won
+
+
+
+
