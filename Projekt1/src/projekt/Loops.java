@@ -48,8 +48,6 @@ public class Loops {
         return wynik;
     }
 
-    /*Zadanie - przykªad Napisz program, który sprawdzi, czy zadane sªowo jest palindromem (czyli
-czy czytany normalnie i wspak daje takie samo sªowo).*/
 
     public boolean palindrom(String p)
     { boolean w = true;

@@ -13,6 +13,7 @@ public class Main {
         Tools t = new Tools();
         Scanner scanner = new Scanner(System.in);
         Loops l = new Loops();
+        Klasy q = new Klasy();
         String dzialanie;
         Double x, y;
         Random r = new Random();
@@ -134,6 +135,16 @@ public class Main {
         System.out.println("");
 
         System.out.println(l.palindrom(scanner.next( )));
+
+        System.out.println(q.suma(5,5));
+
+        System.out.println(q.pierwsza(1));
+        q.wypiszPierwsze(10,20);
+
+        q.max(4,5);
+        q.max(4.0,5.0);
+        q.max(4.5,4);
+
 
 
     }
