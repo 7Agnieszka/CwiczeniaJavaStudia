@@ -56,4 +56,18 @@ return 0;}
 return (liczba/100 +(liczba%100)/10+liczba%10);
 }
 
+can be calculated by taking your weight in kilograms and 
+dividing by the square of your height in meters. Write a program that prompts the 
+user to enter a weight in pounds and height in in
+
+public double bmi(double weight, double height)
+{
+return weight/(height*height);
+}
+
+public double distance(double x1, double x2, double y1, double y2)
+{
+return Math.sqrt( (x1-y1)*(x1-y1)+(x2-y2)*(x2-y2));
+}
+
 
