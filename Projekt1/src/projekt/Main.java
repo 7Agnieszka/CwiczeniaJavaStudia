@@ -10,10 +10,10 @@ public class Main {
     public static void main(String[] args) {
 
         Tools t = new Tools();
-        t.zadanie1();
+       // t.zadanie1();
         Scanner scanner = new Scanner(System.in);
 
-        t.zadanie1();
+        /*t.zadanie1();
         t.zadanie2();
         t.zadanie3();
         t.zadanie4();
@@ -41,8 +41,13 @@ public class Main {
         t.komunikat("podaj rok");
         t.zadanie2z3(scanner.nextInt()) ;
         t.zadanie2z4();
-        t.zadnanie2z5() ;
+        t.zadnanie2z5() ;*/
 
+       // System.out.println(t.fahrenheit(scanner.nextDouble()));
+        //System.out.println(t.celsius(scanner.nextDouble()));
+        t.przestepny();
+        System.out.println("Let's play a game. Pleas choose rock (0), scissors (1), paper (2):");
+         t.rockGame(scanner.nextInt());
     }
 }
 

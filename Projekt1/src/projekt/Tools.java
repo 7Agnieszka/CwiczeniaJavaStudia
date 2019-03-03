@@ -210,7 +210,7 @@ public class Tools {
 
     public void zadanie2z3(int rok) {
         if (rok > 0) {
-            if (rok % 4 == 0 && rok % 100 != 0) System.out.println("Przestepny");
+            if ((rok % 4 == 0 && rok % 100 != 0) || (rok % 400 == 0)) System.out.println("Przestepny");
             else System.out.println("nie przestepny");
         } else System.out.println("niepprawny rok");
     }
@@ -246,11 +246,173 @@ public class Tools {
 
     }
 
-    public void zadnanie2z5() {
+    public void przestepny() {
         int rokLosowy = rr.nextInt(1000) + 1000;
+        System.out.println("rok: " + rokLosowy);
         String text =
-                ((rokLosowy % 4 == 0 && rokLosowy % 100 != 0) ? "przestepny" : "nie przestepny");
+                (((rokLosowy % 4 == 0 && rokLosowy % 100 != 0) || (rokLosowy % 400 == 0)) ? "przestepny" : "nie przestepny");
         System.out.println(text);
     }
+
+
+    public double fahrenheit(double celsius) {
+        return (9. / 5) * celsius + 32.;
+    }
+
+
+    public double celsius(double fahrenheit) {
+        return (fahrenheit - 32.) * 5 / 9;
+    }
+
+
+    public double area(double radious) {
+        return radious * radious * 3.14159;
+    }
+
+    public double volume(double radious, double length) {
+        return area(radious) * length;
+    }
+
+
+    public int sumOfDigits(int liczba) {
+        if (liczba < 1000 || liczba > 999) {
+            System.out.println("liczba nor jest 3 cyfrowa");
+            return 0;
+        }
+
+        return (liczba / 100 + (liczba % 100) / 10 + liczba % 10);
+    }
+
+
+    public double bmi(double weight, double height) {
+        return weight / (height * height);
+    }
+
+    public double distance(double x1, double x2, double y1, double y2) {
+        return Math.sqrt((x1 - y1) * (x1 - y1) + (x2 - y2) * (x2 - y2));
+    }
+
+
+    public void losowyMiesiac(int month) {
+        switch (month) {
+            case 0:
+                System.out.println("January");
+                break;
+            case 1:
+                System.out.println("February");
+                break;
+            case 2:
+                System.out.println("March");
+                break;
+            case 3:
+                System.out.println("April");
+                break;
+            case 4:
+                System.out.println("May");
+                break;
+            case 5:
+                System.out.println("June");
+                break;
+            case 6:
+                System.out.println("July");
+                break;
+            case 7:
+                System.out.println("August");
+                break;
+            case 8:
+                System.out.println("September");
+                break;
+            case 9:
+                System.out.println("October");
+                break;
+            case 10:
+                System.out.println("November");
+                break;
+            case 11:
+                System.out.println("December");
+                break;
+            default:
+                System.out.println("other");
+        }
+    }
+
+
+    public int najwieksza(int a, int b, int c) {
+        if (a > b) {
+            if (a > c) return a;
+            return c;
+        } else if (b > c) return b;
+        return c;
+    }
+
+
+    public void moneta(int m) {
+        int l = rr.nextInt(1);
+        if (l == 1 && l == m)
+            System.out.printf("wylosowany orzel, zgadles");
+
+        else if (l == 1 && l != m)
+            System.out.printf("wylosowany orzel, nie zgadles");
+
+        else if (l == 0 && l == m)
+            System.out.printf("wylosowana reszka, zgadles");
+
+        else if (l == 0 && l != m)
+            System.out.printf("wylosowana reszka, nie zgadles");
+
+        else System.out.printf("nieoczekiwane zakończenie gry");
+    }
+
+
+    public void rockGame(int u) {
+        int c = rr.nextInt(2);
+        String user = "paper";
+        String computer = "rock";
+        String result = "won";
+
+        switch (u) {
+            case 0:
+                user = "rock";
+                break;
+            case 1:
+                user = "scissors";
+                break;
+            case 2:
+                user = "paper";
+                break;
+            default:
+                ;
+        }
+
+        switch (c) {
+            case 0:
+                computer = "rock";
+                break;
+            case 1:
+                computer = "scissors";
+                break;
+            case 2:
+                computer = "paper";
+                break;
+            default:
+                ;
+        }
+
+        if (c == u)
+            System.out.print("both of you choose " + user + ". It's a draw");
+        else {
+            if (c == 0 && u == 1) result = "lost";
+            else if (c == 0 && u == 2) result = "won";
+            else if (c == 1 && u == 0) result = "won";
+            else if (c == 1 && u == 2) result = "lost";
+            else if (c == 2 && u == 0) result = "lost";
+            else if (c == 2 && u == 1) result = "win";
+
+            System.out.println("The computer is " + computer + " You are " + user + ". You " + result);
+
+        }
+
+    }
+
 
 }
