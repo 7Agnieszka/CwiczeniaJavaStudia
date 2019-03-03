@@ -136,11 +136,11 @@ public class Main {
         /*szesnastkowy*/
 //        for( k=0 ; k<=)
        // l.szesnastkowy(28);
-      /*  System.out.println("Podaj mi liczbe to zamienie na szesnastkowy");
+       System.out.println("Podaj mi liczbe to zamienie na szesnastkowy");
         System.out.print(Arrays.toString(l.szesnastkowy(scanner.nextInt())));
         System.out.println("");
 
-        System.out.println(l.palindrom(scanner.next( )));
+       /* System.out.println(l.palindrom(scanner.next( )));
 
         System.out.println(q.suma(5,5));
 
@@ -165,7 +165,7 @@ public class Main {
             System.out.println(i + "! = " + f.countFactorial());
         }
 */
-        b.podzielne();
+       /* b.podzielne();
         b.factor(scanner.nextInt());
         b.series();
         b.liczbaPi(100000);
@@ -173,7 +173,7 @@ public class Main {
         b.moneta();
         b.wypiszComb();
         b.reverse("asfadsa");
-
+*/
     }
 }
 
