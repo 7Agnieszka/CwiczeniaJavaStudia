@@ -23,3 +23,21 @@ public double celsius(double fahrenheit){
 return (fahrenheit -32.)*5/9;
 }
 System.out.printf(celsius(scanner.nextDouble()));
+
+
+(Compute the volume of a cylinder) Write a program that reads in the radius 
+and length of a cylinder and computes the area and volume using the following 
+formulas:
+area = radius * radius * p
+volume = area * length
+Here is a sample run:
+
+public double area(double radious){
+return radious * radious * 3.14159;
+}
+public double volume(double radious, double length)
+{
+return area(radious) * length;
+}
+
+
