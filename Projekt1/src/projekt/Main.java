@@ -131,7 +131,9 @@ public class Main {
        // l.szesnastkowy(28);
         System.out.println("Podaj mi liczbe to zamienie na szesnastkowy");
         System.out.print(Arrays.toString(l.szesnastkowy(scanner.nextInt())));
+        System.out.println("");
 
+        System.out.println(l.palindrom(scanner.next()));
 
 
     }

@@ -48,6 +48,23 @@ public class Loops {
         return wynik;
     }
 
+    /*Zadanie - przykªad Napisz program, który sprawdzi, czy zadane sªowo jest palindromem (czyli
+czy czytany normalnie i wspak daje takie samo sªowo).*/
+
+    public boolean palindrom(String p)
+    { boolean w = true;
+
+            for (int i=0; i < p.length(); i++)
+            {
+                System.out.println("Char " + i + " is " + p.charAt(i) +" "+ p.charAt(p.length()-1-i));
+                if(p.charAt(i) != p.charAt(p.length()-1-i)) w=false;
+            }
+
+        return w;
+    }
+
+
+
 }
 
 
