@@ -49,4 +49,28 @@ public class Book {
 
     }
 
+    /*1/3+3/5+...+97/99*/
+
+    public void series(){
+        double sum=0;
+        for (double i = 1; i < 99; i=i+2) {
+            sum=sum+ (i/(i+2.0));
+        }
+        System.out.println(sum);
+        }
+
+
+    public void liczbaPi(double k){
+        double wynik =1.;
+        double znak = 1.;
+        for(double i=2; i<=k;i++)
+        {
+            znak=znak*(-1.);
+            wynik=wynik + znak/(2*i-1.);
+
+        }
+        System.out.println(4.*wynik);
+
+    }
+
 }

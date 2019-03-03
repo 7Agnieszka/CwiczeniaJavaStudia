@@ -99,7 +99,7 @@ public class Main {
 
         }while(i!=0);
         System.out.println(" = " + suma);
-*/
+
         int k, kk;
         System.out.println(" ---------------------------------------------------------------------");
         System.out.printf("%-2s %-2s %-1s", "|", "*" , "|");
@@ -114,7 +114,7 @@ public class Main {
             System.out.println("|");
 
             System.out.println(" ---------------------------------------------------------------------");
-        }
+        }*/
        /* int p = 1;
         while (p <= 1000) {
             System.out.print(p + ", ");
@@ -167,6 +167,8 @@ public class Main {
 */
         b.podzielne();
         b.factor(scanner.nextInt());
+        b.series();
+        b.liczbaPi(100000);
 
     }
 }

@@ -8,7 +8,7 @@ import java.util.Random;
 
 public class Tools {
 
-    public Random rr = new Random();
+    private Random rr = new Random();
 
 
     public void zadanie1() {
@@ -199,12 +199,12 @@ public class Tools {
 
     public void zadanie2z2(int procenty) {
 
-        if (procenty < 50) System.out.println("Ocena: 2");
-        else if (procenty >= 50 && procenty < 60) System.out.println("Ocena: 3");
-        else if (procenty >= 60 && procenty < 70) System.out.println("Ocena: 3+");
-        else if (procenty >= 70 && procenty < 80) System.out.println("Ocena: 4");
-        else if (procenty >= 80 && procenty < 90) System.out.println("Ocena: 4+");
-        else if (procenty >= 90 && procenty < 100) System.out.println("Ocena: 5");
+        if (procenty < 50) System.out.println("Ocena: NZal");
+        else if (procenty < 60) System.out.println("Ocena: 3");
+        else if (procenty < 70) System.out.println("Ocena: 3+");
+        else if (procenty < 80) System.out.println("Ocena: 4");
+        else if (procenty < 90) System.out.println("Ocena: 4+");
+        else if (procenty < 100) System.out.println("Ocena: 5");
         else System.out.println("niepoprawne dane");
     }
 
