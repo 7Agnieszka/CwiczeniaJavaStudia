@@ -130,7 +130,7 @@ public class Main {
         /*szesnastkowy*/
 //        for( k=0 ; k<=)
        // l.szesnastkowy(28);
-        System.out.println("Podaj mi liczbe to zamienie na szesnastkowy");
+       /* System.out.println("Podaj mi liczbe to zamienie na szesnastkowy");
         System.out.print(Arrays.toString(l.szesnastkowy(scanner.nextInt())));
         System.out.println("");
 
@@ -143,7 +143,21 @@ public class Main {
 
         q.max(4,5);
         q.max(4.0,5.0);
-        q.max(4.5,4);
+        q.max(4.5,4);*/
+
+
+        Cats cat1 = new Cats("Puszek", 2);
+        Cats cat2 = new Cats("Pusia", 4);
+        Cats cat3 = new Cats("Szczesciarz", 7);
+        cat1.printCatInfo();
+        cat2.printCatInfo();
+        cat3.printCatInfo();
+
+
+        for (int i = 1; i <= 10; i++) {
+            Factorial f = new Factorial(i);
+            System.out.println(i + "! = " + f.countFactorial());
+        }
 
 
 
