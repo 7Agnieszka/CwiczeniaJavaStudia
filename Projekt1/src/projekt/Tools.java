@@ -415,4 +415,25 @@ public class Tools {
     }
 
 
+    public void kalk(String dzialanie, Double x, Double y) {
+        switch (dzialanie) {
+            case "+":
+                System.out.println("x = " + x + " y = " + y + " x + y = " + (x + y));
+                break;
+            case "-":
+                System.out.println("x = " + x + " y = " + y + " x - y = " + (x - y));
+                break;
+            case "*":
+                System.out.println("x = " + x + " y = " + y + " x * y = " + (x * y));
+                break;
+            case "/":
+                System.out.println("x = " + x + " y = " + y + " x / y = " + (x / y));
+                break;
+            default:
+                System.out.println("dzialanie zle zdefiniowane");
+        }
+
+    }
+
+
 }
