@@ -103,8 +103,9 @@ public int najwieksza(int a, int b, int c)
 {
 if(a>b)
 {if(a>c) return a;
-else if(c>b) return c;
-else return b;
+return c;}
+else if(b>c) return b;
+return c;
 }
 
 
@@ -114,6 +115,23 @@ a coin results in heads or tails. The program randomly generates an integer 0 or
 which represents head or tail. The program prompts the user to enter a guess and 
 reports whether the guess is correct or incorrect.
 
+public void moneta(int m)
+{
+int l=rr.nextInt(1);
+if( l ==1 && l==m)
+System.out.printf("wylosowany orzel, zgadles");
+}
+else if( l ==1 && l!=m)
+System.out.printf("wylosowany orzel, nie zgadles");
+}
+else if( l ==0 && l==m)
+System.out.printf("wylosowana reszka, zgadles");
+}
+else if( l ==0 && l!=m)
+System.out.printf("wylosowana reszka, nie zgadles");
+}
+else System.out.printf("nieoczekiwane zakończenie gry");
+}
 
 (Game: scissor, rock, paper) Write a program that plays the popular scissor-rock-
 paper game. (A scissor can cut a paper, a rock can knock a scissor, and a paper can 
@@ -124,6 +142,34 @@ or draws. Here are sample runs:
 scissor (0), rock (1), paper (2): 1
 The computer is scissor. You are rock. You won
 
+public void rockGame(int u)
+{
+int c=rr.nextInt(2);
+String user;
+String computer;
 
+switch(u)
+{
+case 0: user="rock"; break;
+case 1: user="scissors"; break;
+case 2: user="paper"; break;
+default;
+}
+
+switch(c)
+{
+case 0: computer="rock"; break;
+case 1: computer="scissors"; break;
+case 2: computer="paper"; break;
+default;
+}
+
+if(c==u)
+System.out.print("both of you choose " + user + ". It's a draw");
+
+if(c==0 && u==1)
+
+
+}
 
 
