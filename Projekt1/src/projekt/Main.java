@@ -14,6 +14,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Loops l = new Loops();
         Klasy q = new Klasy();
+        Book b = new Book();
         String dzialanie;
         Double x, y;
         Random r = new Random();
@@ -98,18 +99,23 @@ public class Main {
 
         }while(i!=0);
         System.out.println(" = " + suma);
-
+*/
         int k, kk;
-        System.out.println(" --------------------------------------------------------------");
-        for (k = 1; k <= 9; k++) {
+        System.out.println(" ---------------------------------------------------------------------");
+        System.out.printf("%-2s %-2s %-1s", "|", "*" , "|");
+        for (k = 1; k <= 9; k++) {System.out.printf("%-2s %-2d %-1s", "|", k , "");}
+        System.out.println("|");
+        System.out.println(" ---------------------------------------------------------------------");
+                for (k = 1; k <= 9; k++) {
+            System.out.printf("%-2s %-2d %-1s", "|", k , "|");
             for (kk = 1; kk <= 9; kk++) {
                 System.out.printf("%-2s %-2d %-1s", "|", k * kk, "");
             }
             System.out.println("|");
 
-            System.out.println(" --------------------------------------------------------------");
+            System.out.println(" ---------------------------------------------------------------------");
         }
-        int p = 1;
+       /* int p = 1;
         while (p <= 1000) {
             System.out.print(p + ", ");
             p = p * 3;
@@ -130,7 +136,7 @@ public class Main {
         /*szesnastkowy*/
 //        for( k=0 ; k<=)
        // l.szesnastkowy(28);
-       /* System.out.println("Podaj mi liczbe to zamienie na szesnastkowy");
+      /*  System.out.println("Podaj mi liczbe to zamienie na szesnastkowy");
         System.out.print(Arrays.toString(l.szesnastkowy(scanner.nextInt())));
         System.out.println("");
 
@@ -139,14 +145,14 @@ public class Main {
         System.out.println(q.suma(5,5));
 
         System.out.println(q.pierwsza(1));
-        q.wypiszPierwsze(10,20);
+        q.wypiszPierwsze(10,20);*/
 
-        q.max(4,5);
+      /*  q.max(4,5);
         q.max(4.0,5.0);
-        q.max(4.5,4);*/
+        q.max(4.5,4);
+*/
 
-
-        Cats cat1 = new Cats("Puszek", 2);
+        /*Cats cat1 = new Cats("Puszek", 2);
         Cats cat2 = new Cats("Pusia", 4);
         Cats cat3 = new Cats("Szczesciarz", 7);
         cat1.printCatInfo();
@@ -158,8 +164,9 @@ public class Main {
             Factorial f = new Factorial(i);
             System.out.println(i + "! = " + f.countFactorial());
         }
-
-
+*/
+        b.podzielne();
+        b.factor(scanner.nextInt());
 
     }
 }
