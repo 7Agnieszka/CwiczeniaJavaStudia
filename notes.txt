@@ -1,6 +1,91 @@
 https://www.hackerrank.com/onboarding/challenge
 
 
+
+
+
+
+
+
+
+package pakiet;
+
+import org.junit.Assert;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+
+public class PG1
+{
+  // korzystałem z tego
+  // https://www.guru99.com/first-webdriver-script.html
+  //
+  // dodac zaleznosc pom
+//      <dependency>
+//        <groupId>org.seleniumhq.selenium</groupId>
+//        <artifactId>selenium-java</artifactId>
+//        <version>3.141.59</version>
+//      </dependency>
+
+  // Dla chrome
+  // https://sites.google.com/a/chromium.org/chromedriver/downloads
+  // testowana w tym teście:
+  // https://chromedriver.storage.googleapis.com/73.0.3683.68/chromedriver_win32.zip
+  //
+  @Test
+  public void test()
+  {
+    System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
+    WebDriver driver = new ChromeDriver();
+    String baseUrl = "http://www.google.pl";
+    String wyszukiwanaFraza = "wyszukaj";
+    String expectedTitle = wyszukiwanaFraza + " - Szukaj w Google";
+
+    // launch Chrome and direct it to the Base URL
+    driver.get(baseUrl);
+
+    // moje rozwiazanie
+    // wyszukanie w google
+    WebElement element = driver.findElement(By.name("q"));// q to name
+dla pola input text formularza
+    element.sendKeys(wyszukiwanaFraza);
+    element.submit();
+
+    // przesuniecie strony w dol :)
+    JavascriptExecutor jse = (JavascriptExecutor)driver;
+    jse.executeScript("window.scrollBy(0,500)", "");
+
+    // get the actual value of the title
+    String actualTitle = driver.getTitle();
+
+    // close Chrome
+    // driver.close();
+    Assert.assertEquals(expectedTitle, actualTitle);
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Write a program that reads a Celsius degree in 
 a double value from the console, then converts it to Fahrenheit and displays the 
 result. The formula for the conversion is as follows:
