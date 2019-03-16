@@ -25,8 +25,8 @@ public class TV {
     +channelUp(): void // zmienia kanaª na kanaª o numerze o jeden wi¦kszy
     +channelDown(): void // zmienia kanaª na kanaª o numerze o jeden mniejszy
     Stwórz równie» klas¦ TestTV, w której zademonstrujesz dziaªanie poszczególnych metod.*/
-    int channel = 0;
-    boolean turnedOn = true;
+    private int channel = 0;
+    private boolean turnedOn = true;
 
 
     public TV(int channel, boolean turnedOn) {
@@ -36,27 +36,35 @@ public class TV {
 
     public void turnOn()
     {
-        this.turnedOn=true;
+       turnedOn=true;
     }
     public void turnOff()
     {
-        this.turnedOn=false;
+        turnedOn=false;
+        channel = 0;
     }
 
     public void setChannel(int c)
     {
-        this.channel=c;
+        if(c<0)
+        {
+            System.out.println("Channel must be non-negative");
+            channel = 0;
+        }
+        else{
+        channel=c;
+    }
     }
 
 
     public void channelUp()
     {
-        this.channel =+ 1;
+        channel =+ 1;
     }
 
     public void channelDown()
     {
-        this.channel =- 1;
+        channel =- 1;
     }
 
 }

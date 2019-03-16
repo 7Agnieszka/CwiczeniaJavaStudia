@@ -217,25 +217,37 @@ public class Main {
 */
 
 
+    Rectangle rect = new Rectangle(2,5);
+
+        System.out.println(rect.getWidth() + " " + rect.getHeight()  + " " + rect.getArea()  + " " +  rect.getParimeter());
 
 
 
 
 
-}
-    public static void zmiana(Circle x, Circle y) {
+
+            TV tt = new TV(1,true);
+
+
+            StopWatch s = new StopWatch();
+
+            System.out.println(s.getStartTime());
+            s.start();
+            for(int i=1; i<=100000; i++);
+            s.stop();
+        System.out.println(s.getElapsedTime());
+
+        }
+    }
+
+  /*  public static void zmiana(Circle x, Circle y) {
         double r= x.getRadius();
         x.setRadius(y.getRadius());
         y.setRadius(r);
     }
 
     public static void zmiana1(Circle x) {
-        x.setRadius(5);
+        x.setRadius(5);*/
 
-    }
-
-
-
-}
 
 
