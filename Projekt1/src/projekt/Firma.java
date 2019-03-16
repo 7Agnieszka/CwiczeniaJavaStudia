@@ -3,7 +3,7 @@ package projekt;
 public class Firma {
 
 
-    public static void main(String[] args) {
+    /**public static void main(String[] args) {
 
         Pracownik p1 = new Pracownik("Aga");
         Pracownik p2 = new Pracownik("Aga","Wojcik");
@@ -15,5 +15,5 @@ public class Firma {
 
 
     }
-
+*/
 }

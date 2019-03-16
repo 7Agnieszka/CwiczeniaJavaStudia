@@ -8,7 +8,7 @@ import java.util.Random;
 import java.lang.Math;
 
 
-public class Main {
+/*public class Main {
 
     public static void main(String[] args) {
 
@@ -217,11 +217,11 @@ public class Main {
 */
 
 
-   /* Rectangle rect = new Rectangle(2,5);
+  /* Rectangle rect = new Rectangle(2,5);
 
         System.out.println(rect.getWidth() + " " + rect.getHeight()  + " " + rect.getArea()  + " " +  rect.getParimeter());
 
-    */
+
 
 
 
@@ -245,19 +245,35 @@ public class Main {
         System.out.println(s.getElapsedTime());*/
 
 
-
+/*
         int n = 10;
         Telefon[] telefony = new Telefon[n];
         for (int i = 0; i < n; i++) {
             telefony[i].zadzwon("112");
         }
+        */
+
+/*
 
 
+      Lista list = new Lista(10);
 
+      list.dodajElement(5);
+      list.dodajElement(1);
+      list.dodajElement(3);
+      list.dodajElement(2);
+      list.dodajElement(3);
+      list.dodajElement(6);
+      list.dodajElement(3);
+      list.dodajElement(6);
+      list.dodajElement(6);
 
-
-
-
+        System.out.println(list.znajdz(3));
+        list.pisz();
+       /* list.usunPierwszy(3);
+        list.pisz();*/
+       /* list.usunPowtorzenia();
+        list.pisz();
 
 
 
@@ -268,7 +284,7 @@ public class Main {
 
 
     }
-    }
+    }*/
 
   /*  public static void zmiana(Circle x, Circle y) {
         double r= x.getRadius();

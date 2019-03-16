@@ -29,19 +29,16 @@ public class Rectangle {
         this.height = height;
     }
 
-    public double getArea()
-    {
+    public double getArea() {
         return height * width;
 
     }
 
-    public double getParimeter()
-    {
+    public double getParimeter() {
         return (2 * (width + height));
     }
 
-    public double diagonal()
-    {
+    public double diagonal() {
         return Math.sqrt(width * width + height * height);
     }
 

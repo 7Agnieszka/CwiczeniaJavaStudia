@@ -2,7 +2,7 @@ package projekt;
 
 public class Telefony {
 
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
 
 
       //  Telefon telefonAni = new Telefon("783982331");
@@ -21,6 +21,6 @@ public class Telefony {
             telefony[i].zadzwon("112");
         }
 
-    }
+    }*/
 
 }

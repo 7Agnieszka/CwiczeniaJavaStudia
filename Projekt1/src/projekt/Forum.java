@@ -18,7 +18,7 @@ package projekt;
 public class Forum {
     static int noOfUsers = 0;
 
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
 
        User u1 = new User("Jan", "M",25 );
        User u2 = new User("Jan", "M",25 );
@@ -37,5 +37,5 @@ public class Forum {
         u2.liczbaZalogowancyh();
         u2.liczbaUserow();
 
-    }
+    }*/
 }
