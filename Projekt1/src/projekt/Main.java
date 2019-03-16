@@ -5,6 +5,8 @@ import com.sun.org.apache.xpath.internal.SourceTree;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
+import java.lang.Math;
+
 
 public class Main {
 
@@ -131,15 +133,15 @@ public class Main {
         }
         System.out.println(suma);*/
 
-      //  System.out.println(l.lengt(16));
+        //  System.out.println(l.lengt(16));
 
         /*szesnastkowy*/
 //        for( k=0 ; k<=)
-       // l.szesnastkowy(28);
-       System.out.println("Podaj mi liczbe to zamienie na szesnastkowy");
+        // l.szesnastkowy(28);
+     /*  System.out.println("Podaj mi liczbe to zamienie na szesnastkowy");
         System.out.print(Arrays.toString(l.szesnastkowy(scanner.nextInt())));
         System.out.println("");
-
+*/
        /* System.out.println(l.palindrom(scanner.next( )));
 
         System.out.println(q.suma(5,5));
@@ -174,7 +176,66 @@ public class Main {
         b.wypiszComb();
         b.reverse("asfadsa");
 */
+
+     /*   Student s = new Student();
+        System.out.println(s.imie);
+        System.out.println(s.nazwisko);
+        System.out.println(s.height);
+        System.out.println(s.age);
+
+        Circle c = new Circle((1 / Math.PI));
+        Circle c1 = new Circle(1.0);
+        Circle c2 = new Circle(2.0);
+        Circle c3 = new Circle();
+        System.out.println(c.getArea());
+        System.out.println(c.getParimeter());
+
+
+        System.out.println(Circle.noOfObjects);
+
+        zmiana(c1,c2);
+        System.out.println(c1.getRadius());
+        System.out.println(c2.getRadius());
+
+        zmiana1(c1);
+        System.out.println(c1.getRadius());
+
+        c1.setRadius(5);
+        c2.setRadius(2);
+        System.out.println(c1.equals(c2));
+
+
+
+
+        StringBuilder builder = new StringBuilder();
+        builder.append("napis1 ");
+        builder.append("napis2 ");
+        builder.append("napis3 ");
+        builder.append(3);
+        System.out.println(builder.toString());
+
+*/
+
+
+
+
+
+
+
+}
+    public static void zmiana(Circle x, Circle y) {
+        double r= x.getRadius();
+        x.setRadius(y.getRadius());
+        y.setRadius(r);
     }
+
+    public static void zmiana1(Circle x) {
+        x.setRadius(5);
+
+    }
+
+
+
 }
 
 
