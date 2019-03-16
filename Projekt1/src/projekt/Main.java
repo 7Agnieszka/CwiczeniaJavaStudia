@@ -217,25 +217,32 @@ public class Main {
 */
 
 
-    Rectangle rect = new Rectangle(2,5);
+   /* Rectangle rect = new Rectangle(2,5);
 
         System.out.println(rect.getWidth() + " " + rect.getHeight()  + " " + rect.getArea()  + " " +  rect.getParimeter());
 
-
+    */
 
 
 
 
             TV tt = new TV(1,true);
 
+            while(true) {
+                tt.menu();
+                //tt.stan();
+                tt.akcja(scanner.next());
+                tt.stan();
+                if(tt.isTurnedOn()==false) {break;}
+            }
 
-            StopWatch s = new StopWatch();
+  /*          StopWatch s = new StopWatch();
 
             System.out.println(s.getStartTime());
             s.start();
             for(int i=1; i<=100000; i++);
             s.stop();
-        System.out.println(s.getElapsedTime());
+        System.out.println(s.getElapsedTime());*/
 
         }
     }
