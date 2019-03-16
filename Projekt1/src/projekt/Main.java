@@ -244,7 +244,30 @@ public class Main {
             s.stop();
         System.out.println(s.getElapsedTime());*/
 
+
+
+        int n = 10;
+        Telefon[] telefony = new Telefon[n];
+        for (int i = 0; i < n; i++) {
+            telefony[i].zadzwon("112");
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
     }
 
   /*  public static void zmiana(Circle x, Circle y) {

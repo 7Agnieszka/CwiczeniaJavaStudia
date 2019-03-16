@@ -48,26 +48,23 @@ public class TV {
     }
 
     public void setChannel(int c) {
-        if (c < 0) {
-            System.out.println("Channel must be non-negative");
-            channel = 0;
-        } else {
-            channel = c;
-        }
+        channel = c;
     }
 
 
     public void channelUp() {
-        channel = +1;
+        setChannel(channel + 1);
     }
 
     public void channelDown() {
-        channel = -1;
+        setChannel(channel - 1);
     }
 
     public void menu() {
         System.out.println("Witaj, telewizor zostal wlaczony");
         System.out.println("wybierz program 1 - 200");
+        System.out.println("wybierz + zeby zwiekszyc kanal o 1");
+        System.out.println("wybierz - zeby zmnijeszyc kanal o 1");
         System.out.println("wybierz x zeby wylaczyc");
 
     }
@@ -77,11 +74,16 @@ public class TV {
 
         if (x.equals("x")) {
             turnOff();
+        } else if (x.equals("+")) {
+            channelUp();
+        } else if (x.equals("-")) {
+            channelDown();
+        } else {
+            channel = Integer.parseInt(x);
         }
-        else{
-            channel=Integer.parseInt(x);
-        }
-
+        //TODO
+        //   obsluzyc wyjatek dla inputow roznych od x i liczby
+        // ograniczyc kanaly 1 -200
     }
 
 
